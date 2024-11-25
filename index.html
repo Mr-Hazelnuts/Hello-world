@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Computer</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0px;
+ background-image: url('resources/background.png');
+  background-size: cover; /* Изображение масштабируется и покрывает весь контейнер */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  background-position: center; /* Изображение центрируется */
+}
+
+.navbar {
+ overflow: hidden;
+ background-color: rgba(150, 150, 150, 0.5);
+ 
+ 
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+
+.navbar a {
+ float: left;
+ display: block;
+ color: rgb(0, 0, 0);;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+}
+.navbar a:hover {
+ background: #ddd;
+ color: black;
+}
+.topnav-right {
+ float: right;
+}
+
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  
+  background-image: url('resources/table.png');
+  background-size: cover; /* Изображение масштабируется и покрывает весь контейнер */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  background-position: center; /* Изображение центрируется */
+  height: 70vh; /* Высота контейнера равна высоте viewport */
+  width: 100%; /* Ширина контейнера равна ширине viewport */
+ align-items: flex-start;
+  color: white; /* Цвет текста */
+}
+.power{
+
+display: flex;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin-top: 10px;
+  background-image: linear-gradient(to bottom, rgba(173, 216, 230,0.5), rgba(135, 206, 235,0.5), rgba(102, 178, 214,0.5), rgba(135, 206, 235,0.5), rgba(173, 216, 230,0.5));
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  width: 100%;
+  text-align: center; /* Центральное выравнивание текста */
+  font-size: 35px;
+  color: white;
+
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  
+  row-gap: 40px;  /* вертикаольное расстояние */
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border-width: 5px;
+  border-style: ridge;
+  border-color: green;
+  padding: 10px;
+ 
+}
+.c1{column-gap: 200px;
+padding: 100px;}
+
+
+.container1{
+	display: flex;
+	
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100px;  
+	width: 100%
+	
+	
+}
+.box1 {
+  width: 970px;
+  height: 300px;
+  
+  display: flex;
+  /*align-items: center;*/
+ /* justify-content: center;*/
+ 
+  margin: 0; /* сокращенная запись для установки всех внешних отступов */
+   font-size: 35px;
+   color: white; 
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  color: black;
+  display: grid;
+  place-items: center; /* Центрирует и по горизонтали, и по вертикали */
+  background-image: radial-gradient(circle, rgba(255, 223, 0, 0.5), transparent);
+  padding: 10px;
+}
+
+.box2 p {
+  margin: 5px 0; /* Добавляем немного отступа между абзацами */
+  text-align: center; /* центрируем текст внутри абзаца */
+
+}
+.gr1{
+background-image: radial-gradient(circle, rgba(255, 223, 0, 0.5), transparent); 
+ padding: 10px;
+}
+
+.gr2{
+background-image: radial-gradient(circle, rgba(184, 134, 11, 0.5), transparent); 
+ padding: 10px;
+}
+.gr3{
+background-image: radial-gradient(circle, rgba(200, 112, 2, 0.5), transparent); 
+ padding: 10px;
+}
+
+.box {
+  width: 480px;
+  height: 513px;
+  flex-wrap: wrap;
+  display: flex;
+  
+ *align-items: center;
+  justify-content: center;
+ 
+  margin: 0; /* сокращенная запись для установки всех внешних отступов */
+  font-size: 22px; /* размер шрифта */
+}
+
+.g1 { 
+background-image: url('resources/video.png');
+background-size: cover;
+background-repeat: no-repeat;
+ }
+.g2 {  background-image: radial-gradient(circle, rgba(0, 255, 0, 0.5), transparent); 
+ padding: 10px;/* внутренний отступ элемента  */ }
+ 
+.g3 {background-image: url('resources/cpuzv.png');
+background-size: cover;
+background-repeat: no-repeat
+}
+.g4 {  background-image: radial-gradient(circle, rgba(255, 0, 255, 0.5), transparent); 
+ padding: 10px;/* внутренний отступ элемента  */ }
+ 
+ .g5 {background-image: url('resources/i5.png');
+background-size: cover;
+background-repeat: no-repeat }
+ 
+ .g6 {  background-image: radial-gradient(circle, rgba(255, 255, 0, 0.5), transparent); 
+ padding: 10px;/* внутренний отступ элемента  */ }
+ 
+  .g7 {background-image: url('resources/cpuzi5.png');
+background-size: cover;
+
+background-repeat: no-repeat }
+ .g8 {  background-image: radial-gradient(circle, rgba(200, 0, 30, 0.5), transparent); 
+ padding: 10px;/* внутренний отступ элемента  */ }
+ 
+ .g9 {background-image: url('resources/motherboard.png');
+background-size: cover;
+background-repeat: no-repeat }
+ .g10 {  background-image: linear-gradient(to bottom, rgba(255,255,255, 0.5), rgba(200,140,220, 0.5), rgba(190,120,200, 0.5), rgba(170,130,170, 0.5), rgba(255,255,255, 0.5)); 
+ padding: 10px;/* внутренний отступ элемента  */ }
+ .g11 {background-image: url('resources/timings.png');
+background-size: cover;
+background-repeat: no-repeat }
+ .g12 {  background-image: linear-gradient(to bottom, rgba(200,200,255, 0.5), rgba(150,150,255, 0.5), rgba(100,100,255, 0.5), rgba(150,150,255, 0.5), rgba(200,200,255, 0.5)); 
+ padding: 10px;/* внутренний отступ элемента  */ }
+ 
+.Comp{
+
+display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin-top: 10px;
+  background-image: url('resources/comp.png');
+  background-size: cover; /* Изображение масштабируется и покрывает весь контейнер */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  background-position: center; /* Изображение центрируется */
+  height: 100vh; /* Высота контейнера равна высоте viewport */
+  width: 100%; /* Ширина контейнера равна ширине viewport */
+ align-items: flex-start;
+ font-size: 60px;
+  color: red; /* Цвет текста */
+
+
+
+
+}
+ 
+</style>
+</head>
+
+
+<body>
+
+<div class="navbar">
+ <a href="#Видеокарта">Видеокарта</a>
+ <a href="#Процессор">Процессор</a>
+ <a href="#Материнская плата и операвная память">Материнская плата и операвная память</a>
+<a href="#Блок питания и хранилище"> Блок питания и хранилище</a>
+<div class="topnav-right">
+ 
+ <a href="#Вывод">Вывод</a>
+ 
+ </div>
+</div>
+
+<div class="main">
+ <h1>Обзор на мой компьютер</h1>
+</div>
+
+<div class="container1">
+<h2 id = "Видеокарта" > Обзор на видеокарту</h2>
+</div>
+
+<div class="container">
+  <div class="box g1"></div>
+  <div class="box g2">
+    Полное Название видеокарты: 
+  MSI GeForce RTX 4070 SUPER VENTUS 3X OC.
+  Ее быстродействие обеспечивают графический процессор GeForce RTX 4070 SUPER
+  на основе микроархитектуры NVIDIA Ada Lovelace и 12 ГБ скоростной памяти GDDR6X 
+  с пропускной способностью 504 ГБ/с. Обмен данными между GPU и VRAM ускоряет 48-мегабайтный кэш L2. 
+  3 осевых вентилятора, крупный радиатор и непосредственно контактирующие с видеопроцессором тепловые
+  трубки предотвращают избыточный нагрев устройства при любых нагрузках.
+  В видеокарте реализованы 56 ядер RT 3-го поколения и 224 тензорных ядра 4-го поколения.
+  Назначением первых является аппаратное ускорение трассировки лучей, а вторых – повышение производительности при рендеринге.   
+   </div>
+  <div class="box g3"></div>
+  <div class="box g4">7168 универсальных процессоров поддерживают высокую частоту кадров. Длина видеокарты составляет 308 мм. 
+  Показатель гарантирует устройству широкую совместимость с корпусами.
+  Я пользуюсь этой видеокартой уже больше, чем полгода и видеокарта показывает отличный результат 
+  как в играх, так и в других задачах. Например в генерации изображений, на этом сайте представленны некоторые из них.
+   </div>
+</div>
+
+<div class="container1">
+<h2 id = "Процессор" > Обзор на процессор</h2>
+</div>
+<div class="container">
+  <div class="box g5"></div>
+  <div class="box g6">
+    Полное Название процессора: 
+  CPU Intel Core i5-12400F Alder Lake OEM
+  Его частота 2.5 ГГц или 4.4 ГГц в режиме Turbo, а объем кэша L3 18MB. У этой модели встроенного видеоядра нет.
+  Сокет процессора LGA 1700, что значит, его пожно поставить на довольно дешевую материнскую плату.
+  i5 12400f имеет 6 произволительных ядер(энергоэффективных ядер нет) и 12 потоков. Размер L2 кеша - 7.5MB.
+</div>
+  <div class="box g7"></div>
+  <div class="box g8"> Тепловыделение процессора не велико: 65 Вт в обычном режиме и 117 Вт в режиме Turb.
+  Максимальная температура 100 °С.  В целом этот процессор не плох за свои деньги, но в некоторых задачах его уже не хватает.
+  В связке с RTX 4070 super лучше подойдут процессоры 13 или 14 поколения так как у них если энегоэффективные ядра и частота производительных ядер выше, а для каких-то сложных задач нужно брать i7 13 поколения.
+</div>
+</div>
+
+
+<div class="container1">
+<h2 id = "Материнская плата и операвная память" > Обзор материнскую плату и операвную память</h2>
+</div>
+<div class="container">
+  <div class="box g9"></div>
+  <div class="box g10">
+ Материнская плата ASUS PRIME B760-PLUS линейки Prime примечательна серебристыми охлаждающими элементами и стабильностью в режиме круглосуточной нагрузки. 
+Она протестирована на эксплуатацию в условиях работы 24/7, поэтому обеспечивает безотказную производительность. 
+Плата выполнена в форм-факторе Standard-ATX и поддерживает установку процессора Intel с сокетом LGA 1700.
+Для размещения модулей оперативной памяти объемом до 192 ГБ есть 4 разъема DIMM DDR5.
+Плата ASUS PRIME B760-PLUS оснащена слотами стандарта PCI-E x16 и PCI-E x1, в которые можно установить дискретный графический адаптер, звуковую карту и другие комплектующие. 
+Под устройства хранения HDD/SSD предлагаются 3 разъема M.2 и 4 слота SATA. 
+Сетевой адаптер со скоростью 2.5 Гбит/с гарантирует стабильное соединение с Интернетом.
+</div>
+  <div class="box g11"></div>
+  <div class="box g12"> Оперативная память KINGSTON, тип памяти DDR5. Частота в XMP профиле
+  5200 МГц с первичными таймингами 40-40-40, чип памяти ревизии Micron. Размер оперативной памяти 32 гб двумя плашками. В моем компьютере память
+находится в разогранном состоянии: частота 5600 МГц, первичные тайминги вы видете на экране.
+Ее можно разогнать еще немного больше, но тогда температура будет слишком высокой. В целом за достаточно низкую цену, память не плохая. 
+ 
+</div>
+</div>
+
+<div class="container1">
+<h2 id = "Блок питания и хранилище" > Обзор Блока питания и хранилище</h2>
+</div>
+
+<div class="power"> 
+<div class ="box1">  Немного расскажу о блоке питания: Aerocool ATX 750W VX PLUS 750W.
+К сожалению он без каких то сертификатов, но работает уже долго, так как нагрузка компьютера
+не привышает 400 ватт, в будущем домаю поменять его. Из системы хранения использую SSD от samsung на 1 терабайт и HHD такого же размера.
+</div>
+</div>
+
+
+
+<div class="Comp">  Да-да, не красиво, я знаю 
+</div>
+
+<div class="container1">
+<h2 id = "Вывод" > Вывод</h2>
+</div>
+
+
+<div class="container c1">
+<div class="box2 gr1">
+  <p>Производительность</p>
+  <p>7/10</p>
+</div>
+<div class ="box2 gr2">
+<p> Внешний вид </p> 
+<p> 0/10 </p>
+</div>
+<div class ="box2 gr3"> <p>  Возможность апгрейда  </p> 
+<p>  6/10 </p>
+</div>
+</div>
+</div>
+</body>
+</html>
